@@ -11,6 +11,11 @@ app.get('/api/products/all', cors(), (req, res) => {
   res.json(products)
 })
 
+app.get('/api/products/instock', cors(), (req, res) => {
+  const instock = products.filter(el => el.qty > 0)
+  res.json(instock)
+})
+
 app.get('/api/products/find', cors(), (req, res) => {
   const searchQuery = req.query.desc.replace(/"/g, '');
   const result = products.filter(el => el.description.includes(searchQuery));
