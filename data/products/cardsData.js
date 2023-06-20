@@ -1,8 +1,8 @@
 export const products = [
   {
     id: 0,
-    priceCountCard: "44,50",
-    priceCountBasic: "50,50",
+    priceCountCard: "84,50",
+    priceCountBasic: "100,50",
     currency: "₽",
     imgSmall: 'http://185.40.7.226:7000/pancakes.webp',
     imgLarge: 'http://185.40.7.226:7000/pancakes@2x.webp',
@@ -29,8 +29,8 @@ export const products = [
   },
   {
     id: 2,
-    priceCountCard: "44,50",
-    priceCountBasic: "50,50",
+    priceCountCard: "440,50",
+    priceCountBasic: "500,50",
     currency: "₽",
     imgSmall: 'http://185.40.7.226:7000/toskana.webp',
     imgLarge: 'http://185.40.7.226:7000/toskana@2x.webp',
@@ -43,8 +43,8 @@ export const products = [
   },
   {
     id: 3,
-    priceCountCard: "44,50",
-    priceCountBasic: "50,50",
+    priceCountCard: "210,50",
+    priceCountBasic: "300,50",
     currency: "₽",
     imgSmall: 'http://185.40.7.226:7000/sosiges.webp',
     imgLarge: 'http://185.40.7.226:7000/sosiges@2x.webp',
