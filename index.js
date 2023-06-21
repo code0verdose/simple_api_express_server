@@ -21,9 +21,9 @@ app.get("/api/emoji/v1/find", cors(), (req, res) => {
       el.keywords.toLowerCase().includes(searchQuery.toLowerCase())
   );
   if (filtered.length) {
-    res.json(filtered);
+    res.status(200).json(filtered);
   } else {
-    res.json({msg: 'По вашему запросу ничего не найдено!'})
+    res.status(201).json({msg: 'По вашему запросу ничего не найдено!'})
   }
 });
 
@@ -45,9 +45,9 @@ app.get("/api/products/find", cors(), (req, res) => {
   const filtered = products.filter((el) => el.description.includes(searchQuery));
 
   if (filtered.length) {
-    res.json(filtered);
+    res.status(200).json(filtered);
   } else {
-    res.json({msg: 'По вашему запросу ничего не найдено!'})
+    res.status(201).json({msg: 'По вашему запросу ничего не найдено!'})
   }
 });
 
