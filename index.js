@@ -15,12 +15,16 @@ app.get("/api/emoji/v1", cors(), (req, res) => {
 
 app.get("/api/emoji/v1/find", cors(), (req, res) => {
   const searchQuery = req.query['query'].replace(/"/g, "");
-  const result = emoji.filter(
+  const filtered = emoji.filter(
     (el) =>
       el.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       el.keywords.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  res.json(result);
+  if (filtered.length) {
+    res.json(filtered);
+  } else {
+    res.json({msg: 'По вашему запросу ничего не найдено!'})
+  }
 });
 
 app.get("/api/emoji/v2", cors(), (req, res) => {
@@ -38,8 +42,13 @@ app.get("/api/products/instock", cors(), (req, res) => {
 
 app.get("/api/products/find", cors(), (req, res) => {
   const searchQuery = req.query['desc'].replace(/"/g, "");
-  const result = products.filter((el) => el.description.includes(searchQuery));
-  res.json(result);
+  const filtered = products.filter((el) => el.description.includes(searchQuery));
+
+  if (filtered.length) {
+    res.json(filtered);
+  } else {
+    res.json({msg: 'По вашему запросу ничего не найдено!'})
+  }
 });
 
 app.listen(port, () => {
