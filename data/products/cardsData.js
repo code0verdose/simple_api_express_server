@@ -4,8 +4,8 @@ export const products = [
     priceCountCard: "84,50",
     priceCountBasic: "100,50",
     currency: "₽",
-    imgSmall: 'http://185.40.7.226:7000/pancakes.webp',
-    imgLarge: 'http://185.40.7.226:7000/pancakes@2x.webp',
+    imgSmall: 'http://185.40.7.226:7000/products/pancakes.webp',
+    imgLarge: 'http://185.40.7.226:7000/products/pancakes@2x.webp',
     discount: 50,
     description:
       "Г/Ц Блинчики с мясом вес, Россия",
@@ -18,8 +18,8 @@ export const products = [
     priceCountCard: "44,50",
     priceCountBasic: "50,50",
     currency: "₽",
-    imgSmall: 'http://185.40.7.226:7000/milk.webp',
-    imgLarge: 'http://185.40.7.226:7000/milk@2x.webp',
+    imgSmall: 'http://185.40.7.226:7000/products/milk.webp',
+    imgLarge: 'http://185.40.7.226:7000/products/milk@2x.webp',
     discount: 90,
     description:
       "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное натуральное свежее",
@@ -32,8 +32,8 @@ export const products = [
     priceCountCard: "440,50",
     priceCountBasic: "500,50",
     currency: "₽",
-    imgSmall: 'http://185.40.7.226:7000/toskana.webp',
-    imgLarge: 'http://185.40.7.226:7000/toskana@2x.webp',
+    imgSmall: 'http://185.40.7.226:7000/products/toskana.webp',
+    imgLarge: 'http://185.40.7.226:7000/products/toskana@2x.webp',
     discount: 55,
     description:
       "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан вкусная",
@@ -46,8 +46,8 @@ export const products = [
     priceCountCard: "210,50",
     priceCountBasic: "300,50",
     currency: "₽",
-    imgSmall: 'http://185.40.7.226:7000/sosiges.webp',
-    imgLarge: 'http://185.40.7.226:7000/sosiges@2x.webp',
+    imgSmall: 'http://185.40.7.226:7000/products/sosiges.webp',
+    imgLarge: 'http://185.40.7.226:7000/products/sosiges@2x.webp',
     discount: 50,
     description:
       "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыром, нежные",
