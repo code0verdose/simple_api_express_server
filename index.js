@@ -14,10 +14,10 @@ app.get("/api/emoji/v1", cors(), (req, res) => {
 });
 
 app.get("/api/emoji/v1/find", cors(), (req, res) => {
-  const searchQuery = req.query.desc.replace(/"/g, "");
+  const searchQuery = req.query['query'].replace(/"/g, "");
   const result = emoji.filter(
     (el) =>
-      el.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      el.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       el.keywords.toLowerCase().includes(searchQuery.toLowerCase())
   );
   res.json(result);
@@ -37,7 +37,7 @@ app.get("/api/products/instock", cors(), (req, res) => {
 });
 
 app.get("/api/products/find", cors(), (req, res) => {
-  const searchQuery = req.query.desc.replace(/"/g, "");
+  const searchQuery = req.query['desc'].replace(/"/g, "");
   const result = products.filter((el) => el.description.includes(searchQuery));
   res.json(result);
 });
