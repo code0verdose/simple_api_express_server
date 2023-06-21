@@ -16,10 +16,10 @@
 При закрытии терминала - работа не прерывается! (Можно запускать на VDS/VPS.
 
 ### URL для запроса:
-`http://185.40.7.226:7000/`
+`http://api.codeoverdose.space/`
 
 ### Если запускаете на своем ПК:
-`http://localhost:7000/`
+`http://localhost:80/`
 
 ## API схема - Emoji Finder v1 (Basic)
 
